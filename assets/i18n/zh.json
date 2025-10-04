@@ -1,6 +1,8 @@
 {
   "brand": "Golden Cell",
   "nav": {
+    "research": "研究",
+    "markets": "市场",
     "technology": "技术",
     "therapies": "治疗领域",
     "products": "产品",
@@ -8,6 +10,25 @@
     "team": "团队",
     "investors": "投资者",
     "contact": "联系"
+  },
+  "research": {
+    "title": "研究与开发",
+    "s1": "干细胞中的活性肽",
+    "s2": "增强的外泌体功能",
+    "s3": "自主技术"
+  },
+  "markets": {
+    "title": "市场洞察",
+    "global": "全球市场",
+    "oncology": "肿瘤市场",
+    "note": "最大且增长最快的细分市场"
+  },
+  "leadership": {
+    "title": "领导团队",
+    "name": "任春洪 博士",
+    "role": "首席执行官 & 研究中心联合主任",
+    "edu": "牛津大学，病理学",
+    "exp": "在国际领先研究中心的经验"
   },
   "lang": { "label": "语言" },
   "hero": {
@@ -54,7 +75,9 @@
       "price": "KRW 99,000"
     },
     "safetyTitle": "安全与质量",
-    "safetyBody": "可按需提供类固醇检测结果；在质量控制下生产。"
+    "safetyBody": "可按需提供类固醇检测结果；在质量控制下生产。",
+    "moreTitle": "专业与临床",
+    "moreBody": "联系我们，讨论专业或临床应用与分销。"
   },
   "pipeline": {
     "title": "研发管线与里程碑",
@@ -100,3 +123,5 @@
     "apply": "请发送简历至"
   }
 }
+    "mission": "我们的使命",
+    "missionBody": "以自主技术打造可获得的高科技疗法。",

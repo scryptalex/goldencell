@@ -41,6 +41,12 @@ body {
 .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 24px rgba(0,0,0,0.04); }
 
 .brand { color: var(--ink); }
+.brand-text { 
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav a { color: var(--ink); }
 .nav a:hover { background: rgba(184, 134, 11, 0.08); }
 .nav a.active { background: rgba(255,215,0,0.20); color: var(--gold-500); }
@@ -98,4 +104,3 @@ body {
     radial-gradient(1.5px 1.5px at 35% 70%, rgba(255,165,0,0.25), transparent 45%);
   opacity: .6;
 }
-

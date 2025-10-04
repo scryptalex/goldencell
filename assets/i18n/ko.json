@@ -1,6 +1,8 @@
 {
   "brand": "Golden Cell",
   "nav": {
+    "research": "연구",
+    "markets": "시장",
     "technology": "기술",
     "therapies": "치료 분야",
     "products": "제품",
@@ -8,6 +10,25 @@
     "team": "팀",
     "investors": "투자자",
     "contact": "문의"
+  },
+  "research": {
+    "title": "연구 및 개발",
+    "s1": "줄기세포의 활성 펩타이드",
+    "s2": "향상된 엑소좀 기능",
+    "s3": "자체 기술"
+  },
+  "markets": {
+    "title": "시장 인사이트",
+    "global": "글로벌 시장",
+    "oncology": "종양학 시장",
+    "note": "가장 크고 빠르게 성장하는 세그먼트"
+  },
+  "leadership": {
+    "title": "리더십",
+    "name": "임춘홍 박사",
+    "role": "대표이사 & 연구소 공동소장",
+    "edu": "옥스퍼드 대학교 병리학",
+    "exp": "국내외 선도 연구기관 경험"
   },
   "lang": { "label": "언어" },
   "hero": {
@@ -55,6 +76,9 @@
     },
     "safetyTitle": "안전성과 품질",
     "safetyBody": "스테로이드 테스트 결과 제공 가능; 문서화된 품질 관리 하에 제조."
+    ,
+    "moreTitle": "전문 및 임상",
+    "moreBody": "전문/임상 응용 및 유통 논의를 위해 연락하세요."
   },
   "pipeline": {
     "title": "파이프라인 및 마일스톤",
@@ -100,3 +124,5 @@
     "apply": "이력서는 다음으로 보내주세요"
   }
 }
+    "mission": "우리의 미션",
+    "missionBody": "자체 기술로 접근 가능한 하이테크 치료를 구현합니다.",

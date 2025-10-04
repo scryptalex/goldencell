@@ -1,6 +1,8 @@
 {
   "brand": "Golden Cell",
   "nav": {
+    "research": "Investigación",
+    "markets": "Mercados",
     "technology": "Tecnología",
     "therapies": "Terapias",
     "products": "Productos",
@@ -8,6 +10,25 @@
     "team": "Equipo",
     "investors": "Inversores",
     "contact": "Contacto"
+  },
+  "research": {
+    "title": "Investigación y Desarrollo",
+    "s1": "Péptidos activos en nuestras células madre",
+    "s2": "Funcionalidad de exosomas mejorada",
+    "s3": "Tecnologías propias"
+  },
+  "markets": {
+    "title": "Análisis de Mercado",
+    "global": "Mercados Globales",
+    "oncology": "Mercado de Oncología",
+    "note": "Segmento más grande y de mayor crecimiento"
+  },
+  "leadership": {
+    "title": "Liderazgo",
+    "name": "Dr. Chun‑hong IM",
+    "role": "CEO y Codirector del Centro de Investigación",
+    "edu": "Universidad de Oxford, Patología",
+    "exp": "Experiencia en centros de investigación líderes internacionales"
   },
   "lang": { "label": "Idioma" },
   "hero": {
@@ -54,7 +75,9 @@
       "price": "99.000 KRW"
     },
     "safetyTitle": "Seguridad y calidad",
-    "safetyBody": "Resultados de pruebas de esteroides disponibles; fabricación con control de calidad."
+    "safetyBody": "Resultados de pruebas de esteroides disponibles; fabricación con control de calidad.",
+    "moreTitle": "Profesional y clínico",
+    "moreBody": "Contáctanos para aplicaciones profesionales o clínicas y distribución."
   },
   "pipeline": {
     "title": "Pipeline y hitos",
@@ -100,3 +123,5 @@
     "apply": "Envíe su CV a"
   }
 }
+    "mission": "Nuestra misión",
+    "missionBody": "Usar tecnologías propias para terapias accesibles de alta tecnología.",

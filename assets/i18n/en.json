@@ -22,6 +22,8 @@
     "title": "R&D Biotech Focused on Outcomes",
     "p1": "Golden Cell advances membrane‑free stem cell technologies, immunotherapy, and gene therapy supported by cryobiology‑based processing.",
     "p2": "We leverage umbilical cord adult stem cells—close to embryonic characteristics—prioritizing efficacy and safety.",
+    "mission": "Our Mission",
+    "missionBody": "Use proprietary technologies to create accessible high‑tech therapies.",
     "list1": "Membrane‑free stem cell secretome",
     "list2": "Peripheral secretion signal research",
     "list3": "Oncolytic, gene‑carrying viral vectors",
@@ -36,6 +38,14 @@
     "t4": { "title": "Cryo Lyophilization", "body": "Cryobiology‑based freeze‑drying improves stability and logistics." },
     "t5": { "title": "Cell Injection", "body": "Targeted delivery platforms increase bioavailability and safety." }
   },
+  "leadership": {
+    "title": "Leadership",
+    "name": "Dr. Chun‑hong IM",
+    "role": "CEO & Co‑Director, Research Center",
+    "edu": "University of Oxford, Pathology",
+    "exp": "Experience across leading international research centers"
+  },
+  
   "therapies": {
     "title": "Therapeutic Areas",
     "a1": "Aging",

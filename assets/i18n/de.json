@@ -1,6 +1,8 @@
 {
   "brand": "Golden Cell",
   "nav": {
+    "research": "Forschung",
+    "markets": "Märkte",
     "technology": "Technologie",
     "therapies": "Therapien",
     "products": "Produkte",
@@ -8,6 +10,25 @@
     "team": "Team",
     "investors": "Investoren",
     "contact": "Kontakt"
+  },
+  "research": {
+    "title": "Forschung & Entwicklung",
+    "s1": "Aktive Peptide in unseren Stammzellen",
+    "s2": "Verbesserte Exosom‑Funktionalität",
+    "s3": "Eigene Technologien"
+  },
+  "markets": {
+    "title": "Markteinblicke",
+    "global": "Weltmärkte",
+    "oncology": "Onkologiemarkt",
+    "note": "Größtes und am schnellsten wachsendes Segment"
+  },
+  "leadership": {
+    "title": "Führung",
+    "name": "Dr. Chun‑hong IM",
+    "role": "CEO & Co‑Direktor Forschungszentrum",
+    "edu": "University of Oxford, Pathology",
+    "exp": "Erfahrung in führenden internationalen Forschungszentren"
   },
   "lang": { "label": "Sprache" },
   "hero": {
@@ -55,6 +76,9 @@
     },
     "safetyTitle": "Sicherheit & Qualität",
     "safetyBody": "Steroid‑Testergebnisse auf Anfrage; Herstellung mit dokumentierter Qualitätssicherung."
+    ,
+    "moreTitle": "Professionell & Klinisch",
+    "moreBody": "Kontaktieren Sie uns für professionelle/klinische Anwendungen und Distribution."
   },
   "pipeline": {
     "title": "Pipeline & Meilensteine",
@@ -100,3 +124,5 @@
     "apply": "Senden Sie Ihren Lebenslauf an"
   }
 }
+    "mission": "Unsere Mission",
+    "missionBody": "Eigene Technologien für zugängliche High‑Tech‑Therapien nutzen.",
