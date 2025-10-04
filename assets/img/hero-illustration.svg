@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="Golden cell abstract hero">
+  <defs>
+    <radialGradient id="glow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffe8a3" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#c9a227" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#8b6b16" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="480" fill="none"/>
+  <g>
+    <circle cx="220" cy="120" r="160" fill="url(#glow)"/>
+    <circle cx="900" cy="180" r="180" fill="url(#glow)"/>
+    <circle cx="620" cy="80" r="90" fill="url(#glow)"/>
+  </g>
+  <g stroke="#c9a227" stroke-opacity="0.35" fill="none">
+    <path d="M0,400 C220,280 420,520 640,420 C820,340 940,360 1200,280"/>
+    <path d="M0,360 C220,240 420,480 640,380 C820,300 940,320 1200,240"/>
+  </g>
+</svg>
+

@@ -1,0 +1,102 @@
+{
+  "brand": "Golden Cell",
+  "nav": {
+    "technology": "Tecnología",
+    "therapies": "Terapias",
+    "products": "Productos",
+    "pipeline": "Pipeline",
+    "team": "Equipo",
+    "investors": "Inversores",
+    "contact": "Contacto"
+  },
+  "lang": { "label": "Idioma" },
+  "hero": {
+    "title": "Terapias celulares y génicas de nueva generación",
+    "tagline": "Hacer retroceder el reloj biológico.",
+    "cta": "Contactar",
+    "learn": "Saber más"
+  },
+  "about": {
+    "title": "Biotech de I+D enfocada en resultados",
+    "p1": "Golden Cell impulsa tecnologías de células madre sin membrana, inmunoterapia y terapia génica con procesos basados en criobiología.",
+    "p2": "Usamos células madre de cordón umbilical —similares a las embrionarias— priorizando eficacia y seguridad.",
+    "list1": "Secretoma de células madre sin membrana",
+    "list2": "Señales de secreción periférica",
+    "list3": "Vectores oncolíticos portadores de genes",
+    "list4": "Liofilización basada en criobiología",
+    "list5": "Tecnologías de inyección celular"
+  },
+  "technology": {
+    "title": "Tecnología propia",
+    "t1": { "title": "Células madre sin membrana", "body": "Proteínas activas se entregan eficientemente y actúan de inmediato." },
+    "t2": { "title": "Señales periféricas", "body": "Aprovechamos señales periféricas para la reparación sistémica." },
+    "t3": { "title": "Vectores oncolíticos", "body": "Virus inmunogénicos replicantes insertan genes en loci tumorales anómalos." },
+    "t4": { "title": "Criolifilización", "body": "Mejora estabilidad y logística." },
+    "t5": { "title": "Inyección celular", "body": "Entrega dirigida aumenta bio-disponibilidad y seguridad." }
+  },
+  "therapies": {
+    "title": "Áreas terapéuticas",
+    "a1": "Envejecimiento",
+    "a1b": "Rejuvenecimiento celular para restaurar función.",
+    "a2": "Trastornos sanguíneos",
+    "a2b": "Reparación hematológica dirigida.",
+    "a3": "Inmuno-oncología",
+    "a3b": "Inmunoterapias y entrega génica contra el cáncer."
+  },
+  "products": {
+    "title": "Productos",
+    "disclaimer": "Uso profesional y de investigación cuando aplique; afirmaciones sujetas a validación clínica.",
+    "rubin": {
+      "title": "A Torres Rubin Cream",
+      "b1": "Activa células cutáneas",
+      "b2": "Mejora la inmunidad",
+      "b3": "Refuerza la barrera y la auto‑protección de la piel",
+      "price": "99.000 KRW"
+    },
+    "safetyTitle": "Seguridad y calidad",
+    "safetyBody": "Resultados de pruebas de esteroides disponibles; fabricación con control de calidad."
+  },
+  "pipeline": {
+    "title": "Pipeline y hitos",
+    "m1": { "t": "Preclínica de terapia génica", "b": "Experimentos preclínicos completados; paquete de datos listo." },
+    "m2": { "t": "Innovación en fabricación", "b": "Criolifilización reduce inversión inicial y simplifica distribución." },
+    "m3": { "t": "Plan de lanzamiento y listing", "b": "Plan de lanzamiento en marcha; estrategia alineada a objetivos de crecimiento." }
+  },
+  "team": {
+    "title": "Equipo",
+    "p1": { "n": "Líder de terapias", "r": "Inmunoterapia y entrega celular" },
+    "p2": { "n": "Líder de terapia génica", "r": "Vectores oncolíticos y preclínica" },
+    "p3": { "n": "Líder de manufactura", "r": "Crío y liofilización" }
+  },
+  "investors": {
+    "title": "Para inversores",
+    "body": "Posición estratégica en biofarma con datos preclínicos validados, procesos escalables y plan de lanzamiento enfocado.",
+    "k1n": "2026", "k1l": "Año clave",
+    "k2n": "KRW",  "k2l": "Pronóstico en moneda local",
+    "k3n": "I+D",  "k3l": "Eficiencia de capital"
+  },
+  "contact": {
+    "title": "Contacto",
+    "body": "¿Interesado en alianzas, colaboración clínica o inversión? Escríbenos.",
+    "emailL": "Correo",
+    "addrL": "Dirección",
+    "addrV": "Su ciudad, país",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "msg": "Mensaje",
+      "send": "Enviar"
+    },
+    "privacy": "Respetamos la privacidad y tratamos los datos con responsabilidad."
+  },
+  "footer": { "top": "Volver arriba" },
+  "careers": {
+    "title": "Empleo",
+    "tagline": "Estamos formando un equipo biotech de primer nivel.",
+    "open": "Puestos abiertos",
+    "r1": "Científico/a senior — Inmuno‑oncología",
+    "r2": "Ingeniero/a de procesos — Crioliofilización",
+    "r3": "Responsable de Operaciones Clínicas",
+    "apply": "Envíe su CV a"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "brand": "Golden Cell",
+  "nav": {
+    "technology": "Technologie",
+    "therapies": "Therapien",
+    "products": "Produkte",
+    "pipeline": "Pipeline",
+    "team": "Team",
+    "investors": "Investoren",
+    "contact": "Kontakt"
+  },
+  "lang": { "label": "Sprache" },
+  "hero": {
+    "title": "Zell- und Gentherapien der nächsten Generation",
+    "tagline": "Die biologischen Uhren zurückdrehen.",
+    "cta": "Kontakt aufnehmen",
+    "learn": "Mehr erfahren"
+  },
+  "about": {
+    "title": "Forschungsgetriebene Biotech mit Ergebnissen",
+    "p1": "Golden Cell entwickelt membranfreie Stammzelltechnologien, Immun- und Gentherapien mit krypto‑biologischen Prozessen.",
+    "p2": "Wir nutzen Stammzellen aus Nabelschnurblut – nahe an embryonalen Eigenschaften – mit Fokus auf Wirksamkeit und Sicherheit.",
+    "list1": "Sekretom membranfreier Stammzellen",
+    "list2": "Periphere Sekretionssignale",
+    "list3": "Onkolytische, gentragende Vektoren",
+    "list4": "Kryobiologische Lyophilisierung",
+    "list5": "Zellinjektions‑Delivery"
+  },
+  "technology": {
+    "title": "Eigene Technologien",
+    "t1": { "title": "Membranfreie Stammzellen", "body": "Aktive Proteine werden effizient geliefert und wirken sofort ohne Membran." },
+    "t2": { "title": "Periphere Signale", "body": "Periphere Sekretionssignale zur systemischen Reparatur nutzen." },
+    "t3": { "title": "Onkolytische Vektoren", "body": "Replizierende, immunogene Viren mit Genen für anormale Tumorloci." },
+    "t4": { "title": "Kryo‑Lyophilisierung", "body": "Verbessert Stabilität und Logistik." },
+    "t5": { "title": "Zellinjektion", "body": "Gezielte Abgabe erhöht Bioverfügbarkeit und Sicherheit." }
+  },
+  "therapies": {
+    "title": "Therapeutische Bereiche",
+    "a1": "Altern",
+    "a1b": "Zelluläre Verjüngung zur Funktionswiederherstellung.",
+    "a2": "Bluterkrankungen",
+    "a2b": "Gezielte hämatologische Reparatur.",
+    "a3": "Immunonkologie",
+    "a3b": "Immuntherapien und Gentransfer bei Krebs."
+  },
+  "products": {
+    "title": "Produkte",
+    "disclaimer": "Nur für professionelle bzw. Forschungsanwendung; Aussagen bedürfen klinischer Validierung.",
+    "rubin": {
+      "title": "A Torres Rubin Cream",
+      "b1": "Aktiviert Hautzellen",
+      "b2": "Verbessert Immunität",
+      "b3": "Stärkt Hautbarriere und Selbstschutz",
+      "price": "99.000 KRW"
+    },
+    "safetyTitle": "Sicherheit & Qualität",
+    "safetyBody": "Steroid‑Testergebnisse auf Anfrage; Herstellung mit dokumentierter Qualitätssicherung."
+  },
+  "pipeline": {
+    "title": "Pipeline & Meilensteine",
+    "m1": { "t": "Präklinische Gentherapie", "b": "Präklinische Experimente abgeschlossen; Datenpaket verfügbar." },
+    "m2": { "t": "Fertigungsinnovation", "b": "Kryo‑Lyophilisierung senkt Anfangsinvestitionen und vereinfacht Distribution." },
+    "m3": { "t": "Release & Listing", "b": "Produkt‑Release und Listing‑Strategie gemäß Wachstumszielen." }
+  },
+  "team": {
+    "title": "Team",
+    "p1": { "n": "Leitung Therapien", "r": "Immuntherapie & Zell‑Delivery" },
+    "p2": { "n": "Leitung Gentherapie", "r": "Onkolytische Vektoren & Präklinik" },
+    "p3": { "n": "Leitung Produktion", "r": "Kryo & Lyophilisierung" }
+  },
+  "investors": {
+    "title": "Für Investoren",
+    "body": "Strategische Position in Biopharma mit validierten Präkliniken, skalierbaren Prozessen und fokussiertem Launch‑Plan.",
+    "k1n": "2026", "k1l": "Schlüsseljahr",
+    "k2n": "KRW",  "k2l": "Prognose in Landeswährung",
+    "k3n": "F&E",  "k3l": "Kapitaleffizienz im Fokus"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "body": "Interesse an Partnerschaft, klinischer Zusammenarbeit oder Investment? Schreiben Sie uns.",
+    "emailL": "E‑Mail",
+    "addrL": "Adresse",
+    "addrV": "Ihre Stadt, Land",
+    "form": {
+      "name": "Name",
+      "email": "E‑Mail",
+      "msg": "Nachricht",
+      "send": "Senden"
+    },
+    "privacy": "Wir respektieren Privatsphäre und gehen sorgsam mit Daten um."
+  },
+  "footer": { "top": "Nach oben" },
+  "careers": {
+    "title": "Karriere",
+    "tagline": "Wir bauen ein Biotech‑Spitzenteam auf.",
+    "open": "Offene Stellen",
+    "r1": "Senior Scientist — Immunonkologie",
+    "r2": "Prozessingenieur — Kryo‑Lyophilisierung",
+    "r3": "Leitung klinische Operationen",
+    "apply": "Senden Sie Ihren Lebenslauf an"
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Replace https://your-domain with your site URL once deployed -->
+  <url><loc>https://your-domain/</loc></url>
+  <url><loc>https://your-domain/about.html</loc></url>
+  <url><loc>https://your-domain/technology.html</loc></url>
+  <url><loc>https://your-domain/therapies.html</loc></url>
+  <url><loc>https://your-domain/products.html</loc></url>
+  <url><loc>https://your-domain/pipeline.html</loc></url>
+  <url><loc>https://your-domain/team.html</loc></url>
+  <url><loc>https://your-domain/investors.html</loc></url>
+  <url><loc>https://your-domain/contact.html</loc></url>
+  <url><loc>https://your-domain/privacy.html</loc></url>
+  <url><loc>https://your-domain/careers.html</loc></url>
+</urlset>
+

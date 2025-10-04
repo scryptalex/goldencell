@@ -1,0 +1,103 @@
+{
+  "brand": "Golden Cell",
+  "nav": {
+    "technology": "Technology",
+    "therapies": "Therapies",
+    "products": "Products",
+    "pipeline": "Pipeline",
+    "team": "Team",
+    "investors": "Investors",
+    "contact": "Contact"
+  },
+  "lang": { "label": "Language" },
+  "hero": {
+    "title": "Next‑Generation Cell & Gene Therapies",
+    "tagline": "Turning back the biological clock.",
+    "cta": "Contact Us",
+    "learn": "Learn More"
+  },
+  "about": {
+    "title": "R&D Biotech Focused on Outcomes",
+    "p1": "Golden Cell advances membrane‑free stem cell technologies, immunotherapy, and gene therapy supported by cryobiology‑based processing.",
+    "p2": "We leverage umbilical cord adult stem cells—close to embryonic characteristics—prioritizing efficacy and safety.",
+    "list1": "Membrane‑free stem cell secretome",
+    "list2": "Peripheral secretion signal research",
+    "list3": "Oncolytic, gene‑carrying viral vectors",
+    "list4": "Cryobiology‑based lyophilization",
+    "list5": "Cell injection delivery technologies"
+  },
+  "technology": {
+    "title": "Proprietary Technology",
+    "t1": { "title": "Membrane‑Free Stem Cells", "body": "Active proteins are efficiently delivered and act immediately without cell membranes." },
+    "t2": { "title": "Peripheral Signals", "body": "Harnessing peripheral secretion signals to coordinate systemic repair." },
+    "t3": { "title": "Oncolytic Vectors", "body": "Replicating, immunogenic viruses insert genes targeting abnormal cancer loci." },
+    "t4": { "title": "Cryo Lyophilization", "body": "Cryobiology‑based freeze‑drying improves stability and logistics." },
+    "t5": { "title": "Cell Injection", "body": "Targeted delivery platforms increase bioavailability and safety." }
+  },
+  "therapies": {
+    "title": "Therapeutic Areas",
+    "a1": "Aging",
+    "a1b": "Cellular rejuvenation to restore function.",
+    "a2": "Blood Disorders",
+    "a2b": "Targeted hematologic repair and support.",
+    "a3": "Immuno‑Oncology",
+    "a3b": "Immunotherapies and gene delivery for cancer."
+  },
+  "products": {
+    "title": "Products",
+    "disclaimer": "For professional and research use where applicable; claims subject to clinical validation.",
+    "rubin": {
+      "title": "A Torres Rubin Cream",
+      "b1": "Activates skin cells",
+      "b2": "Improves immunity",
+      "b3": "Strengthens skin barrier and self‑protection",
+      "price": "KRW 99,000"
+    },
+    "safetyTitle": "Safety & Quality",
+    "safetyBody": "Steroid test results available upon request; manufactured under documented quality controls."
+  },
+  "pipeline": {
+    "title": "Pipeline & Milestones",
+    "m1": { "t": "Gene Therapy Pre‑Clinical", "b": "Completed preclinical experiments extracting cells from ascites and halting proliferation; data package ready." },
+    "m2": { "t": "Manufacturing Innovation", "b": "Cryobiology‑based freeze‑drying reduces initial investment and simplifies distribution." },
+    "m3": { "t": "Release & Listing Plans", "b": "Product release planning underway; listing strategy aligned with growth targets." }
+  },
+  "team": {
+    "title": "Team",
+    "p1": { "n": "Therapeutics Lead", "r": "Immunotherapy & cell delivery" },
+    "p2": { "n": "Gene Therapy Lead", "r": "Oncolytic vectors & preclinical" },
+    "p3": { "n": "Manufacturing Lead", "r": "Cryo & lyophilization" }
+  },
+  "investors": {
+    "title": "For Investors",
+    "body": "Strategic position in biopharma with validated preclinical data, scalable processes, and a focused launch plan.",
+    "k1n": "2026", "k1l": "Key milestone year",
+    "k2n": "KRW",  "k2l": "Forecast in local currency",
+    "k3n": "R&D",  "k3l": "Focused capital efficiency"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "body": "Interested in partnerships, clinical collaboration, or investment? Reach out and our team will respond promptly.",
+    "emailL": "Email",
+    "addrL": "Address",
+    "addrV": "Your City, Country",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "msg": "Message",
+      "send": "Send"
+    },
+    "privacy": "We respect privacy and handle data responsibly."
+  },
+  "footer": { "top": "Back to top" }
+  ,
+  "careers": {
+    "title": "Careers",
+    "tagline": "We’re building a world‑class biotech team.",
+    "open": "Open Roles",
+    "r1": "Senior Scientist — Immuno‑Oncology",
+    "r2": "Process Engineer — Cryo Lyophilization",
+    "r3": "Clinical Operations Manager",
+    "apply": "Send your CV to"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Golden Cell",
+  "short_name": "GoldenCell",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0a08",
+  "theme_color": "#c9a227",
+  "icons": [
+    { "src": "assets/img/logo-mark.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
+

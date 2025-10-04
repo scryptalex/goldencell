@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Technology — Golden Cell</title>
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/i18n.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#home" aria-label="Golden Cell">
+          <img src="assets/img/logo-mark.svg" alt="Golden Cell" style="width:34px;height:34px"/>
+          <span class="brand-text" data-i18n="brand">Golden Cell</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="technology.html" data-i18n="nav.technology">Technology</a>
+          <a href="therapies.html" data-i18n="nav.therapies">Therapies</a>
+          <a href="products.html" data-i18n="nav.products">Products</a>
+          <a href="pipeline.html" data-i18n="nav.pipeline">Pipeline</a>
+          <a href="team.html" data-i18n="nav.team">Team</a>
+          <a href="investors.html" data-i18n="nav.investors">Investors</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang">
+          <label for="lang-select" class="sr-only" data-i18n="lang.label">Language</label>
+          <select id="lang-select" aria-label="Language">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="de">Deutsch</option>
+            <option value="ko">한국어</option>
+            <option value="zh">中文</option>
+            <option value="es">Español</option>
+            <option value="ar">العربية</option>
+            <option value="he">עברית</option>
+            <option value="ja">日本語</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1 data-i18n="technology.title">Proprietary Technology</h1>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container grid-3">
+          <div class="tile">
+            <img src="assets/img/icons/secretome.svg" alt="Secretome" style="width:44px;height:44px"/>
+            <h3 data-i18n="technology.t1.title">Membrane‑Free Stem Cells</h3>
+            <p data-i18n="technology.t1.body">Active proteins are efficiently delivered and act immediately without cell membranes.</p>
+          </div>
+          <div class="tile">
+            <img src="assets/img/icons/signal.svg" alt="Peripheral signal" style="width:44px;height:44px"/>
+            <h3 data-i18n="technology.t2.title">Peripheral Signals</h3>
+            <p data-i18n="technology.t2.body">Harnessing peripheral secretion signals to coordinate systemic repair.</p>
+          </div>
+          <div class="tile">
+            <img src="assets/img/icons/virus.svg" alt="Oncolytic vector" style="width:44px;height:44px"/>
+            <h3 data-i18n="technology.t3.title">Oncolytic Vectors</h3>
+            <p data-i18n="technology.t3.body">Replicating, immunogenic viruses insert genes targeting abnormal cancer loci.</p>
+          </div>
+          <div class="tile">
+            <img src="assets/img/icons/cryo.svg" alt="Cryo lyophilization" style="width:44px;height:44px"/>
+            <h3 data-i18n="technology.t4.title">Cryo Lyophilization</h3>
+            <p data-i18n="technology.t4.body">Cryobiology‑based freeze‑drying improves stability and logistics.</p>
+          </div>
+          <div class="tile">
+            <img src="assets/img/icons/injection.svg" alt="Cell injection" style="width:44px;height:44px"/>
+            <h3 data-i18n="technology.t5.title">Cell Injection</h3>
+            <p data-i18n="technology.t5.body">Targeted delivery platforms increase bioavailability and safety.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span id="year"></span> <span data-i18n="brand">Golden Cell</span></span>
+        <a href="#" class="to-top" data-i18n="footer.top">Back to top</a>
+      </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded',()=>{const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();});</script>
+  </body>
+  </html>
+
