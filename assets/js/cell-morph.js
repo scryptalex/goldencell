@@ -34,6 +34,7 @@
     const baseSizeFactor = parseFloat(ds.cellSize || ds.cellSizeFactor) || 0.72;
     const chaos = parseFloat(ds.cellChaos) || 1; // 0.5 calm .. 2 wild
     const speed = parseFloat(ds.cellSpeed) || 1; // 0.5 slow .. 2 fast
+    const cut = clamp(parseFloat(ds.cellCut || ds.cellCutout || ds.cellCenterCut) || 0.42, 0.2, 0.7); // central square cut-out factor
     const rotateAmt = prefersReduced ? 0 : (0.0008 * speed);
     const accelMag = 0.02 * chaos;
     const maxVel = 0.8 * speed;
@@ -54,6 +55,7 @@
     goldImg.src = 'assets/img/gold.png'; // optional override; falls back to gradient if not found
 
     let goldCanvas = null;
+    const maskedCache = new Map();
     let ready = false;
     let goldImgReady = false;
     cellImg.onload = () => { goldCanvas = createGoldCanvas(Math.min(canvas.width, canvas.height)); ready = true; };
@@ -90,6 +92,49 @@
     }
 
     let last = performance.now();
+    let lastX = ent.x, lastY = ent.y;
+
+    // trail particles
+    const trail = [];
+    function pushTrail(){
+      const dx = ent.x - lastX, dy = ent.y - lastY;
+      const dist = Math.hypot(dx,dy);
+      if (dist > 4){
+        trail.push({ x: ent.x, y: ent.y, a: 0.22, r: 2 + Math.random()*2 });
+        if (trail.length > 60) trail.shift();
+        lastX = ent.x; lastY = ent.y;
+      }
+    }
+
+    // orbiters
+    const orbits = Array.from({length: 6}, (_,i)=>({ ang: Math.random()*Math.PI*2, r: 28 + i*6, sp: 0.0015*(i+1)*speed }));
+
+    // central mask builder (cuts out a centered square)
+    function getMasked(size){
+      const key = Math.floor(size);
+      if (maskedCache.has(key)) return maskedCache.get(key);
+      const c = document.createElement('canvas'); c.width=c.height=key;
+      const cx = c.getContext('2d');
+      // draw scaled cell image
+      cx.drawImage(cellImg, 0, 0, key, key);
+      // cut out central square
+      const s = key * cut;
+      const x = (key - s)/2, y = (key - s)/2;
+      cx.save();
+      cx.globalCompositeOperation = 'destination-out';
+      const rad = Math.max(6, key*0.02);
+      // rounded square path
+      cx.beginPath();
+      cx.moveTo(x+rad, y);
+      cx.lineTo(x+s-rad, y); cx.quadraticCurveTo(x+s, y, x+s, y+rad);
+      cx.lineTo(x+s, y+s-rad); cx.quadraticCurveTo(x+s, y+s, x+s-rad, y+s);
+      cx.lineTo(x+rad, y+s); cx.quadraticCurveTo(x, y+s, x, y+s-rad);
+      cx.lineTo(x, y+rad); cx.quadraticCurveTo(x, y, x+rad, y);
+      cx.closePath(); cx.fill();
+      cx.restore();
+      maskedCache.set(key, c);
+      return c;
+    }
     function tick(now){
       const dt = Math.min(32, now - last); last = now;
       if (!ready){ requestAnimationFrame(tick); return; }
@@ -142,9 +187,10 @@
       // prepare gold canvas scaled to current size
       if (!goldCanvas || goldCanvas.width !== Math.floor(size)){ goldCanvas = createGoldCanvas(Math.max(32, Math.floor(size))); }
 
-      // cell layers
-      drawImage(cellImg, 1-ent.morph, -offset, 0);
-      drawImage(cellImg, clamp(0.4*(1-ent.morph),0,1), offset, 0);
+      // cell layers (masked center)
+      const masked = getMasked(Math.max(32, Math.floor(size)));
+      drawImage(masked, 1-ent.morph, -offset, 0);
+      drawImage(masked, clamp(0.4*(1-ent.morph),0,1), offset, 0);
       // gold layers
       if (goldImgReady){ drawImage(goldImg, ent.morph, 0, 0); }
       else { drawImage(goldCanvas, ent.morph, 0, 0); }
@@ -168,6 +214,31 @@
         ctx.globalAlpha = s.a;
         ctx.fillStyle = '#FFD700';
         ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
+      // trail
+      pushTrail();
+      for (let i=0;i<trail.length;i++){
+        const t = trail[i];
+        t.a *= 0.98; t.r *= 0.995;
+        if (t.a < 0.02) { trail.splice(i,1); i--; continue; }
+        ctx.globalAlpha = t.a;
+        ctx.fillStyle = 'rgba(218,165,32,0.6)';
+        ctx.beginPath(); ctx.arc(t.x, t.y, t.r, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
+      // orbits (micro vesicles)
+      if (!prefersReduced){
+        ctx.globalAlpha = 0.9;
+        orbits.forEach((o,idx)=>{
+          o.ang += o.sp * dt;
+          const px = ent.x + Math.cos(o.ang) * (o.r + size*0.02);
+          const py = ent.y + Math.sin(o.ang) * (o.r + size*0.02);
+          ctx.fillStyle = idx%2? '#FFD700' : '#DAA520';
+          ctx.beginPath(); ctx.arc(px, py, 2 + (idx%3===0?1:0), 0, Math.PI*2); ctx.fill();
+        });
         ctx.globalAlpha = 1;
       }
 
