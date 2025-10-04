@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="assets/css/styles.css?v=20251005" />
     <link rel="stylesheet" href="assets/css/theme.css?v=20251005" />
     <link rel="stylesheet" href="assets/css/perplex.css?v=20251005" />
+    <link rel="stylesheet" href="assets/css/interactive.css?v=20251005" />
     <script defer src="assets/js/i18n.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script defer src="assets/js/perplex.js"></script>
+    <script defer src="assets/js/interactive.js"></script>
   </head>
   <body>
     <header class="site-header" data-include="partials/header.html"></header>
@@ -31,6 +35,8 @@
               </div>
             </div>
             <div class="hero-visual" data-reveal>
+              <div id="particles-hero"></div>
+              <div id="lottie-hero" aria-hidden="true"></div>
               <div class="molecular-structure">
                 <div class="molecule"></div>
                 <div class="molecule"></div>
@@ -94,6 +100,27 @@
               <p data-i18n="technology.t5.body">Targeted delivery platforms increase bioavailability and safety.</p>
             </div>
           </div>
+          <div class="section" data-reveal>
+            <div data-tabs>
+              <div class="tabs-list" role="tablist">
+                <button class="tab" role="tab" aria-selected="true" data-tab="t1">Stem Cells</button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="t2">Signals</button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="t3">Vectors</button>
+              </div>
+              <div class="tab-panel" data-panel="t1">
+                <h3 data-i18n="technology.t1.title">Membrane‑Free Stem Cells</h3>
+                <p data-i18n="technology.t1.body">Active proteins are efficiently delivered and act immediately without cell membranes.</p>
+              </div>
+              <div class="tab-panel" data-panel="t2">
+                <h3 data-i18n="technology.t2.title">Peripheral Signals</h3>
+                <p data-i18n="technology.t2.body">Harnessing peripheral secretion signals to coordinate systemic repair.</p>
+              </div>
+              <div class="tab-panel" data-panel="t3">
+                <h3 data-i18n="technology.t3.title">Oncolytic Vectors</h3>
+                <p data-i18n="technology.t3.body">Replicating, immunogenic viruses insert genes targeting abnormal cancer loci.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -121,22 +148,34 @@
         <div class="container" >
           <h2 data-i18n="products.title">Products</h2>
           <p class="muted" data-i18n="products.disclaimer">For professional and research use where applicable; claims subject to clinical validation.</p>
-          <div class="product-grid" >
-            <div class="product" data-reveal>
-              <h3 data-i18n="products.rubin.title">A Torres Rubin Cream</h3>
-              <p data-i18n="products.rubin.b1">Activates skin cells</p>
-              <p data-i18n="products.rubin.b2">Improves immunity</p>
-              <p data-i18n="products.rubin.b3">Strengthens skin barrier and self‑protection</p>
-              <div class="price" data-i18n="products.rubin.price">KRW 99,000</div>
+          <div id="product-carousel" class="carousel">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <div class="product" data-reveal>
+                    <h3 data-i18n="products.rubin.title">A Torres Rubin Cream</h3>
+                    <p data-i18n="products.rubin.b1">Activates skin cells</p>
+                    <p data-i18n="products.rubin.b2">Improves immunity</p>
+                    <p data-i18n="products.rubin.b3">Strengthens skin barrier and self‑protection</p>
+                    <div class="price" data-i18n="products.rubin.price">KRW 99,000</div>
+                  </div>
+                </div>
+                <div class="carousel-slide">
+                  <div class="product" data-reveal>
+                    <h3 data-i18n="products.safetyTitle">Safety & Quality</h3>
+                    <p data-i18n="products.safetyBody">Steroid test results available upon request; manufactured under documented quality controls.</p>
+                  </div>
+                </div>
+                <div class="carousel-slide">
+                  <div class="product" data-reveal>
+                    <h3 data-i18n="products.moreTitle">Professional & Clinical</h3>
+                    <p data-i18n="products.moreBody">Contact us to discuss professional or clinical applications and distribution.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="product" data-reveal>
-              <h3 data-i18n="products.safetyTitle">Safety & Quality</h3>
-              <p data-i18n="products.safetyBody">Steroid test results available upon request; manufactured under documented quality controls.</p>
-            </div>
-            <div class="product" data-reveal>
-              <h3 data-i18n="products.moreTitle">Professional & Clinical</h3>
-              <p data-i18n="products.moreBody">Contact us to discuss professional or clinical applications and distribution.</p>
-            </div>
+            <button class="carousel-btn prev" aria-label="Previous">‹</button>
+            <button class="carousel-btn next" aria-label="Next">›</button>
           </div>
         </div>
       </section>
@@ -300,3 +339,22 @@
     
   </body>
   </html>
+      <section id="faq" class="section" data-reveal>
+        <div class="container">
+          <h2>FAQ</h2>
+          <div data-accordion>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false"><span>What is membrane‑free stem cells?</span><span class="chev">⌄</span></button>
+              <div class="acc-panel">A preparation rich in active proteins that can act without cell membranes, enabling immediate effect.</div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false"><span>Do you support clinical partnerships?</span><span class="chev">⌄</span></button>
+              <div class="acc-panel">Yes — contact us to discuss clinical collaborations and professional applications.</div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false"><span>How are products manufactured?</span><span class="chev">⌄</span></button>
+              <div class="acc-panel">We use cryobiology‑based processes and documented quality controls to ensure consistency and safety.</div>
+            </div>
+          </div>
+        </div>
+      </section>
