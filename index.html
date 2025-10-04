@@ -8,11 +8,12 @@
     <link rel="icon" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/i18n.js"></script>
+    <script defer src="assets/js/main.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#home" aria-label="Golden Cell">
+        <a class="brand" href="index.html#home" aria-label="Golden Cell">
           <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
             <defs>
               <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -29,13 +30,13 @@
         </a>
 
         <nav class="nav" aria-label="Primary">
-          <a href="#technology" data-i18n="nav.technology">Technology</a>
-          <a href="#therapies" data-i18n="nav.therapies">Therapies</a>
-          <a href="#products" data-i18n="nav.products">Products</a>
-          <a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a>
-          <a href="#team" data-i18n="nav.team">Team</a>
-          <a href="#investors" data-i18n="nav.investors">Investors</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <a href="technology.html" data-i18n="nav.technology">Technology</a>
+          <a href="therapies.html" data-i18n="nav.therapies">Therapies</a>
+          <a href="products.html" data-i18n="nav.products">Products</a>
+          <a href="pipeline.html" data-i18n="nav.pipeline">Pipeline</a>
+          <a href="team.html" data-i18n="nav.team">Team</a>
+          <a href="investors.html" data-i18n="nav.investors">Investors</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="lang">
@@ -276,13 +277,6 @@
       </div>
     </footer>
 
-    <script>
-      // Set current year
-      document.addEventListener('DOMContentLoaded', () => {
-        const y = document.getElementById('year');
-        if (y) y.textContent = new Date().getFullYear();
-      });
-    </script>
+    
   </body>
   </html>
-

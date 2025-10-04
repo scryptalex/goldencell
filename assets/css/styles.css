@@ -47,6 +47,7 @@ body {
 .nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
 .nav a { color: var(--white); text-decoration: none; padding: 8px 10px; border-radius: 8px; }
 .nav a:hover { background: rgba(255, 255, 255, 0.06); }
+.nav a.active { background: rgba(201,162,39,0.12); color: var(--gold-200); }
 
 .lang select {
   background: #120f0a;
