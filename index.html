@@ -8,8 +8,11 @@
     <link rel="icon" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/styles.css?v=20251005" />
     <link rel="stylesheet" href="assets/css/theme.css?v=20251005" />
+    <link rel="stylesheet" href="assets/css/perplex.css?v=20251005" />
     <script defer src="assets/js/i18n.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="assets/js/perplex.js"></script>
   </head>
   <body>
     <header class="site-header" data-include="partials/header.html"></header>
@@ -17,11 +20,23 @@
     <main id="home">
       <section class="hero">
         <div class="container hero-inner">
-          <h1 data-i18n="hero.title">Next‑Generation Cell & Gene Therapies</h1>
-          <p class="tagline" data-i18n="hero.tagline">Turning back the biological clock.</p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Contact Us</a>
-            <a href="#technology" class="btn btn-secondary" data-i18n="hero.learn">Learn More</a>
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title" data-i18n="hero.title">Next‑Generation Cell & Gene Therapies</h1>
+              <p class="hero-subtitle" data-i18n="hero.tagline">Turning back the biological clock.</p>
+              <p class="hero-description" data-i18n="about.p1">Golden Cell advances membrane‑free stem cell technologies, immunotherapy, and gene therapy supported by cryobiology‑based processing.</p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Contact Us</a>
+                <a href="#technology" class="btn btn-secondary" data-i18n="hero.learn">Learn More</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="molecular-structure">
+                <div class="molecule"></div>
+                <div class="molecule"></div>
+                <div class="molecule"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -139,6 +154,47 @@
                 <h4 data-i18n="pipeline.m3.t">Release & Listing Plans</h4>
                 <p data-i18n="pipeline.m3.b">Product release planning underway; listing strategy aligned with growth targets.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section alt">
+        <div class="container">
+          <h2 class="section-title" data-i18n="research.title">Research & Development</h2>
+          <div class="stats">
+            <div class="stat-card">
+              <h3>260+</h3>
+              <p data-i18n="research.s1">Active peptides in our stem cells</p>
+            </div>
+            <div class="stat-card">
+              <h3>2–3×</h3>
+              <p data-i18n="research.s2">Enhanced exosome functionality</p>
+            </div>
+            <div class="stat-card">
+              <h3>100%</h3>
+              <p data-i18n="research.s3">Proprietary technologies</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="markets" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="markets.title">Market Insights</h2>
+          <div class="two-col">
+            <div>
+              <h3 data-i18n="markets.global">Global Markets</h3>
+              <div class="chart-container">
+                <canvas id="globalMarketChart" height="260"></canvas>
+              </div>
+            </div>
+            <div>
+              <h3 data-i18n="markets.oncology">Oncology Market</h3>
+              <div class="chart-container">
+                <canvas id="cancerMarketChart" height="220"></canvas>
+              </div>
+              <p class="market-note" data-i18n="markets.note">Largest and fastest growing segment</p>
             </div>
           </div>
         </div>

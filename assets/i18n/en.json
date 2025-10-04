@@ -4,6 +4,8 @@
     "technology": "Technology",
     "therapies": "Therapies",
     "products": "Products",
+    "research": "Research",
+    "markets": "Markets",
     "pipeline": "Pipeline",
     "team": "Team",
     "investors": "Investors",
@@ -61,6 +63,18 @@
     "m1": { "t": "Gene Therapy Pre‑Clinical", "b": "Completed preclinical experiments extracting cells from ascites and halting proliferation; data package ready." },
     "m2": { "t": "Manufacturing Innovation", "b": "Cryobiology‑based freeze‑drying reduces initial investment and simplifies distribution." },
     "m3": { "t": "Release & Listing Plans", "b": "Product release planning underway; listing strategy aligned with growth targets." }
+  },
+  "research": {
+    "title": "Research & Development",
+    "s1": "Active peptides in our stem cells",
+    "s2": "Enhanced exosome functionality",
+    "s3": "Proprietary technologies"
+  },
+  "markets": {
+    "title": "Market Insights",
+    "global": "Global Markets",
+    "oncology": "Oncology Market",
+    "note": "Largest and fastest growing segment"
   },
   "team": {
     "title": "Team",
