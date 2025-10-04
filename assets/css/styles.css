@@ -136,5 +136,4 @@ body {
   .lang { order: 2; }
 }
 
-/* Optional theme overrides */
-@import url('theme.css');
+/* Theme overrides now linked per-page; removed invalid late @import */
