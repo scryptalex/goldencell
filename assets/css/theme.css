@@ -43,7 +43,7 @@ body {
 
 .brand { color: var(--ink); }
 .brand-text { 
-  background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-500) 100%);
+  background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-600) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

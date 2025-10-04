@@ -66,7 +66,7 @@ body {
 }
 .hero-inner { padding: 72px 0 56px; text-align: center; }
 .hero h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 10px; letter-spacing: 0.2px; }
-.tagline { color: var(--gold-100); font-size: 18px; margin: 0 0 22px; }
+.tagline { color: var(--ink-2); font-size: 18px; margin: 0 0 22px; }
 .hero-cta { display: flex; gap: 12px; justify-content: center; }
 
 .btn { display: inline-block; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; border: 1px solid transparent; }
@@ -92,7 +92,7 @@ body {
   box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
 }
 .tile h3 { margin: 0 0 6px; font-size: 18px; }
-.tile p { margin: 0; color: var(--gold-500); }
+.tile p { margin: 0; color: var(--ink-2); }
 .checklist { list-style: none; padding: 0; margin: 0; }
 .checklist li { padding-left: 24px; position: relative; margin: 8px 0; }
 .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-500); }
@@ -114,7 +114,7 @@ body {
 .cval { color: var(--white); text-decoration: none; }
 
 .form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.form label { display: grid; gap: 6px; margin-bottom: 10px; color: var(--gold-500); }
+.form label { display: grid; gap: 6px; margin-bottom: 10px; color: var(--ink-2); }
 .form input, .form textarea {
   background: #0d0b09;
   color: var(--white);
