@@ -2,7 +2,7 @@
 [data-tabs] { display: grid; gap: 10px; }
 .tabs-list { display: flex; gap: 8px; flex-wrap: wrap; }
 .tab { background: #fff; color: var(--ink); border: 1px solid rgba(184,134,11,0.22); border-radius: 12px; padding: 8px 12px; cursor: pointer; font-weight: 600; }
-.tab[aria-selected="true"] { background: rgba(255,215,0,0.18); color: var(--gold-500); border-color: rgba(184,134,11,0.34); }
+.tab[aria-selected="true"] { background: rgba(184,134,11,0.18); color: var(--gold-500); border-color: rgba(184,134,11,0.34); }
 .tab-panel { display: none; background: #fff; border: 1px solid rgba(184,134,11,0.22); border-radius: 14px; padding: 14px; }
 .tab-panel.active { display: block; }
 

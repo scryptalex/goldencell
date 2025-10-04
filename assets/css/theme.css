@@ -43,14 +43,14 @@ body {
 
 .brand { color: var(--ink); }
 .brand-text { 
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-500) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .nav a { color: var(--ink); }
 .nav a:hover { background: rgba(184, 134, 11, 0.08); }
-.nav a.active { background: rgba(255,215,0,0.20); color: var(--gold-500); }
+.nav a.active { background: rgba(184,134,11,0.18); color: var(--gold-500); }
 
 .hero {
   background:
@@ -63,7 +63,7 @@ body {
 .tagline { color: var(--ink-2); }
 
 .btn-primary {
-  background: linear-gradient(180deg, var(--gold-300), var(--gold-500));
+  background: linear-gradient(180deg, var(--gold-400), var(--gold-600));
   color: #2C1E04;
   border-color: rgba(0,0,0,0.06);
 }

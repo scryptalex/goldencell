@@ -47,7 +47,7 @@ body {
 .nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
 .nav a { color: var(--white); text-decoration: none; padding: 8px 10px; border-radius: 8px; }
 .nav a:hover { background: rgba(255, 255, 255, 0.06); }
-.nav a.active { background: rgba(201,162,39,0.12); color: var(--gold-200); }
+.nav a.active { background: rgba(184,134,11,0.18); color: var(--gold-500); }
 
 .lang select {
   background: #120f0a;
@@ -70,9 +70,9 @@ body {
 .hero-cta { display: flex; gap: 12px; justify-content: center; }
 
 .btn { display: inline-block; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; border: 1px solid transparent; }
-.btn-primary { background: linear-gradient(180deg, var(--gold-300), var(--gold-500)); color: #201a0c; border-color: rgba(0,0,0,0.12); }
+.btn-primary { background: linear-gradient(180deg, var(--gold-400), var(--gold-600)); color: #201a0c; border-color: rgba(0,0,0,0.12); }
 .btn-primary:hover { filter: brightness(1.05); }
-.btn-secondary { background: transparent; color: var(--gold-200); border-color: rgba(201,162,39,0.35); }
+.btn-secondary { background: transparent; color: var(--gold-500); border-color: rgba(184,134,11,0.35); }
 .btn-secondary:hover { background: rgba(201,162,39,0.08); }
 
 .section { padding: 56px 0; }
@@ -92,21 +92,21 @@ body {
   box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
 }
 .tile h3 { margin: 0 0 6px; font-size: 18px; }
-.tile p { margin: 0; color: var(--gold-100); }
+.tile p { margin: 0; color: var(--gold-500); }
 .checklist { list-style: none; padding: 0; margin: 0; }
 .checklist li { padding-left: 24px; position: relative; margin: 8px 0; }
-.checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-300); }
+.checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-500); }
 
-.price { color: var(--gold-200); font-weight: 700; margin-top: 8px; }
+.price { color: var(--gold-500); font-weight: 700; margin-top: 8px; }
 
 .timeline { position: relative; margin: 8px 0; }
 .timeline::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: rgba(201,162,39,0.28); }
 .tl-item { position: relative; padding-left: 36px; margin: 16px 0; }
-.tl-dot { position: absolute; left: 4px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(180deg, var(--gold-300), var(--gold-500)); box-shadow: 0 0 0 3px rgba(201,162,39,0.18); }
+.tl-dot { position: absolute; left: 4px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(180deg, var(--gold-400), var(--gold-600)); box-shadow: 0 0 0 3px rgba(184,134,11,0.18); }
 .tl-content h4 { margin: 0 0 4px; }
 
 .person { text-align: center; }
-.avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(180deg, var(--gold-300), var(--gold-600)); color: #1e1608; display: grid; place-items: center; font-weight: 800; margin: 0 auto 8px; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(180deg, var(--gold-400), var(--gold-600)); color: #1e1608; display: grid; place-items: center; font-weight: 800; margin: 0 auto 8px; }
 
 .contact-list { list-style: none; padding: 0; margin: 0; }
 .contact-list li { display: grid; grid-template-columns: 140px 1fr; gap: 10px; padding: 6px 0; }
@@ -114,7 +114,7 @@ body {
 .cval { color: var(--white); text-decoration: none; }
 
 .form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.form label { display: grid; gap: 6px; margin-bottom: 10px; color: var(--gold-100); }
+.form label { display: grid; gap: 6px; margin-bottom: 10px; color: var(--gold-500); }
 .form input, .form textarea {
   background: #0d0b09;
   color: var(--white);
@@ -126,7 +126,7 @@ body {
 
 .site-footer { border-top: 1px solid rgba(201,162,39,0.16); padding: 18px 0; background: #0d0c0a; color: var(--muted); }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; }
-.to-top { color: var(--gold-200); text-decoration: none; }
+.to-top { color: var(--gold-500); text-decoration: none; }
 
 @media (max-width: 900px) {
   .two-col { grid-template-columns: 1fr; }
