@@ -57,7 +57,13 @@
       s.addEventListener('change', () => {
         const L = s.value;
         localStorage.setItem('gc.lang', L);
-        load(L);
+        try {
+          // Force a full refresh so all includes/pages reflect the change consistently
+          // This avoids timing issues with dynamically injected headers across pages
+          location.reload();
+        } catch (_) {
+          load(L);
+        }
       });
     }
   }
