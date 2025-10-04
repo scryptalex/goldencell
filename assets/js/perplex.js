@@ -71,20 +71,7 @@
     els.forEach(el => io.observe(el));
   }
 
-  function parallax(){
-    const container = qs('.hero');
-    const nodes = qsa('.molecule');
-    if (!container || !nodes.length) return;
-    container.addEventListener('mousemove', (e) => {
-      const rect = container.getBoundingClientRect();
-      const cx = (e.clientX - rect.left) / rect.width - 0.5;
-      const cy = (e.clientY - rect.top) / rect.height - 0.5;
-      nodes.forEach((n,i) => {
-        const depth = (i+1)*4;
-        n.style.transform = `translate(${cx*depth}px, ${cy*depth}px)`;
-      });
-    }, { passive: true });
-  }
+  function parallax(){ /* replaced by cell morph canvas; keeping no-op for compatibility */ }
 
   function tilt(){
     qsa('.product, .tile, .card').forEach(el => {

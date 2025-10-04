@@ -13,10 +13,9 @@
     <script defer src="assets/js/i18n.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5/build/player/lottie.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script defer src="assets/js/perplex.js"></script>
     <script defer src="assets/js/interactive.js"></script>
+    <script defer src="assets/js/cell-morph.js"></script>
   </head>
   <body>
     <header class="site-header" data-include="partials/header.html"></header>
@@ -35,13 +34,7 @@
               </div>
             </div>
             <div class="hero-visual" data-reveal>
-              <div id="particles-hero"></div>
-              <div id="lottie-hero" aria-hidden="true"></div>
-              <div class="molecular-structure">
-                <div class="molecule"></div>
-                <div class="molecule"></div>
-                <div class="molecule"></div>
-              </div>
+              <canvas id="cell-canvas"></canvas>
             </div>
           </div>
         </div>
