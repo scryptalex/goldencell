@@ -48,8 +48,14 @@
     resize();
     window.addEventListener('resize', resize);
 
+    // Use images provided under /images; pick randomly at load
+    const cellSources = [
+      'images/20251005_0201_Golden Molecular Structure_remix_01k6rq8f5nfb5tcdv9dc5qmctk.png',
+      'images/20251005_0202_Clear Molecular Pattern_remix_01k6rq963nep6tcw06sfyy3evb.png',
+      'images/20251005_0202_Clear Molecular Pattern_remix_01k6rq963ped7beksp03r70d5k.png'
+    ];
     const cellImg = new Image();
-    cellImg.src = 'generated-image.png';
+    cellImg.src = cellSources[Math.floor(Math.random()*cellSources.length)];
 
     const goldImg = new Image();
     goldImg.src = 'assets/img/gold.png'; // optional override; falls back to gradient if not found

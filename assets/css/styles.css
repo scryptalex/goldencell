@@ -60,7 +60,6 @@ body {
 
 .hero {
   background:
-    url('../img/hero-illustration.svg') center/cover no-repeat,
     radial-gradient(800px 400px at 20% -10%, rgba(255, 220, 140, 0.15), transparent 60%),
     radial-gradient(600px 300px at 90% 10%, rgba(232, 199, 102, 0.18), transparent 70%);
   border-bottom: 1px solid rgba(201,162,39,0.18);
