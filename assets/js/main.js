@@ -36,4 +36,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   highlightActiveNav();
   // Let i18n re-apply translations and bind listeners now that header is present
   window.dispatchEvent(new Event('gc:refresh'));
+
+  // Header scroll state for elevated look on light theme
+  const header = document.querySelector('.site-header');
+  const apply = () => { if (!header) return; header.classList.toggle('scrolled', window.scrollY > 2); };
+  apply();
+  window.addEventListener('scroll', apply, { passive: true });
 });
