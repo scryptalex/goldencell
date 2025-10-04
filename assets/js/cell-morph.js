@@ -141,6 +141,9 @@
       maskedCache.set(key, c);
       return c;
     }
+    // ripple rings on morph flips
+    const ripples = [];
+
     function tick(now){
       const dt = Math.min(32, now - last); last = now;
       if (!ready){ requestAnimationFrame(tick); return; }
@@ -161,7 +164,12 @@
       if (ent.y > canvas.height-pad){ ent.y = canvas.height-pad; ent.vy *= -0.9; }
 
       // morph oscillation with random dwell durations
-      if (now > ent.nextFlipAt){ ent.dir *= -1; ent.nextFlipAt = now + (Math.random()*(morphDuration.max-morphDuration.min)+morphDuration.min); }
+      if (now > ent.nextFlipAt){
+        ent.dir *= -1;
+        ent.nextFlipAt = now + (Math.random()*(morphDuration.max-morphDuration.min)+morphDuration.min);
+        // spawn ripple at current entity position
+        ripples.push({ x: ent.x, y: ent.y, r: Math.max(16, Math.min(canvas.width, canvas.height)*0.12), a: 0.25, v: 0.12 });
+      }
       ent.morph = clamp(ent.morph + ent.dir * (dt/ (morphDuration.max)), 0, 1);
 
       // scale pulse tied to morph
@@ -178,6 +186,13 @@
       ctx.save();
       ctx.translate(ent.x, ent.y);
       ctx.rotate(ent.ang);
+      // membrane wobble (non-uniform scale)
+      if (!prefersReduced){
+        const wob = 0.03;
+        const sx = 1 + wob * Math.sin(now*0.002 + 0.3);
+        const sy = 1 - wob * Math.sin(now*0.002 - 0.2);
+        ctx.scale(sx, sy);
+      }
       ctx.translate(-ent.x, -ent.y);
 
       // merge effect: draw two converging ghosts during mid morph
@@ -211,6 +226,17 @@
         ctx.globalCompositeOperation = 'source-over';
       }
 
+      // subtle tint pulse (golden wash)
+      if (!prefersReduced){
+        const ta = 0.05 + 0.05*Math.sin(now*0.003);
+        ctx.globalAlpha = ta;
+        const wash = ctx.createRadialGradient(ent.x, ent.y, size*0.3, ent.x, ent.y, size*0.9);
+        wash.addColorStop(0, 'rgba(255,215,0,0.5)');
+        wash.addColorStop(1, 'rgba(218,165,32,0.0)');
+        ctx.fillStyle = wash; ctx.beginPath(); ctx.arc(ent.x, ent.y, size*0.95, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
       // sparkles
       spawnSparkles();
       for (let i=sparkles.length-1; i>=0; i--){
@@ -220,6 +246,19 @@
         ctx.globalAlpha = s.a;
         ctx.fillStyle = '#FFD700';
         ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
+      // ripples (expanding rings)
+      for (let i=ripples.length-1; i>=0; i--){
+        const rp = ripples[i];
+        rp.r += rp.v * dt * (size*0.02);
+        rp.a *= 0.985;
+        if (rp.a < 0.02 || rp.r > Math.max(canvas.width, canvas.height)) { ripples.splice(i,1); continue; }
+        ctx.globalAlpha = rp.a;
+        ctx.strokeStyle = 'rgba(255,215,0,0.8)';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(rp.x, rp.y, rp.r, 0, Math.PI*2); ctx.stroke();
         ctx.globalAlpha = 1;
       }
 
