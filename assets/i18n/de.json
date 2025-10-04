@@ -41,6 +41,8 @@
     "title": "Forschungsgetriebene Biotech mit Ergebnissen",
     "p1": "Golden Cell entwickelt membranfreie Stammzelltechnologien, Immun- und Gentherapien mit krypto‑biologischen Prozessen.",
     "p2": "Wir nutzen Stammzellen aus Nabelschnurblut – nahe an embryonalen Eigenschaften – mit Fokus auf Wirksamkeit und Sicherheit.",
+    "mission": "Unsere Mission",
+    "missionBody": "Eigene Technologien für zugängliche High‑Tech‑Therapien nutzen.",
     "list1": "Sekretom membranfreier Stammzellen",
     "list2": "Periphere Sekretionssignale",
     "list3": "Onkolytische, gentragende Vektoren",
@@ -124,5 +126,3 @@
     "apply": "Senden Sie Ihren Lebenslauf an"
   }
 }
-    "mission": "Unsere Mission",
-    "missionBody": "Eigene Technologien für zugängliche High‑Tech‑Therapien nutzen.",

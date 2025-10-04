@@ -41,6 +41,8 @@
     "title": "Biotech de I+D enfocada en resultados",
     "p1": "Golden Cell impulsa tecnologías de células madre sin membrana, inmunoterapia y terapia génica con procesos basados en criobiología.",
     "p2": "Usamos células madre de cordón umbilical —similares a las embrionarias— priorizando eficacia y seguridad.",
+    "mission": "Nuestra misión",
+    "missionBody": "Usar tecnologías propias para terapias accesibles de alta tecnología.",
     "list1": "Secretoma de células madre sin membrana",
     "list2": "Señales de secreción periférica",
     "list3": "Vectores oncolíticos portadores de genes",
@@ -123,5 +125,3 @@
     "apply": "Envíe su CV a"
   }
 }
-    "mission": "Nuestra misión",
-    "missionBody": "Usar tecnologías propias para terapias accesibles de alta tecnología.",
