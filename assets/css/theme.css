@@ -1,0 +1,21 @@
+/* Optional theme override file
+   Define or override CSS variables here to change colors/spacing/typography.
+   Example: paste your new palette and it will override styles.css variables. */
+
+/* Example structure:
+:root {
+  --gold-50: #f6efe0;
+  --gold-100: #edd9a6;
+  --gold-200: #e2bc62;
+  --gold-300: #d7a83a;
+  --gold-400: #c68f1f;
+  --gold-500: #b17814;
+  --gold-600: #8d5f0e;
+  --ink: #0e0f10;
+  --ink-2: #2a2518;
+  --bg: #0a0a0a;
+  --muted: #a69773;
+  --white: #ffffff;
+}
+*/
+

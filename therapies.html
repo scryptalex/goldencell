@@ -10,37 +10,7 @@
     <script defer src="assets/js/main.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html#home" aria-label="Golden Cell">
-          <img src="assets/img/logo-mark.svg" alt="Golden Cell" style="width:34px;height:34px"/>
-          <span class="brand-text" data-i18n="brand">Golden Cell</span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-          <a href="technology.html" data-i18n="nav.technology">Technology</a>
-          <a href="therapies.html" data-i18n="nav.therapies">Therapies</a>
-          <a href="products.html" data-i18n="nav.products">Products</a>
-          <a href="pipeline.html" data-i18n="nav.pipeline">Pipeline</a>
-          <a href="team.html" data-i18n="nav.team">Team</a>
-          <a href="investors.html" data-i18n="nav.investors">Investors</a>
-          <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <div class="lang">
-          <label for="lang-select" class="sr-only" data-i18n="lang.label">Language</label>
-          <select id="lang-select" aria-label="Language">
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-            <option value="de">Deutsch</option>
-            <option value="ko">한국어</option>
-            <option value="zh">中文</option>
-            <option value="es">Español</option>
-            <option value="ar">العربية</option>
-            <option value="he">עברית</option>
-            <option value="ja">日本語</option>
-          </select>
-        </div>
-      </div>
-    </header>
+    <header class="site-header" data-include="partials/header.html"></header>
     <main>
       <section class="hero">
         <div class="container hero-inner">
@@ -64,12 +34,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>&copy; <span id="year"></span> <span data-i18n="brand">Golden Cell</span></span>
-        <a href="#" class="to-top" data-i18n="footer.top">Back to top</a>
-      </div>
-    </footer>
+    <footer class="site-footer" data-include="partials/footer.html"></footer>
     
   </body>
   </html>

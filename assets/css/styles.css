@@ -135,3 +135,6 @@ body {
   .nav { order: 3; width: 100%; justify-content: center; }
   .lang { order: 2; }
 }
+
+/* Optional theme overrides */
+@import url('theme.css');

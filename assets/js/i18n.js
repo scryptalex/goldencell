@@ -3,7 +3,7 @@
   const RTL = new Set(["ar","he"]);
 
   const byId = id => document.getElementById(id);
-  const select = byId('lang-select');
+  const getSelect = () => byId('lang-select');
 
   function pickDefault() {
     const saved = localStorage.getItem('gc.lang');
@@ -19,6 +19,8 @@
       if (!res.ok) throw new Error('i18n load failed');
       const dict = await res.json();
       apply(dict, lang);
+      // Expose last dict for re-apply after dynamic includes
+      window.gcI18n = { dict, lang, apply };
     } catch (e) {
       if (lang !== 'en') return load('en');
       // eslint-disable-next-line no-console
@@ -46,17 +48,34 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const lang = pickDefault();
-    if (select) select.value = lang;
-    load(lang);
-    if (select) {
-      select.addEventListener('change', () => {
-        const L = select.value;
+  function bindLangSelect() {
+    const s = getSelect();
+    if (s && !s.dataset.bound) {
+      s.dataset.bound = '1';
+      s.addEventListener('change', () => {
+        const L = s.value;
         localStorage.setItem('gc.lang', L);
         load(L);
       });
     }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const lang = pickDefault();
+    const s = getSelect();
+    if (s) s.value = lang;
+    bindLangSelect();
+    load(lang);
+  });
+
+  // Re-apply translations and re-bind after header/footer includes
+  window.addEventListener('gc:refresh', () => {
+    try {
+      bindLangSelect();
+      if (window.gcI18n) {
+        const { dict, lang, apply } = window.gcI18n;
+        if (dict && lang && apply) apply(dict, lang);
+      }
+    } catch (_) { /* noop */ }
   });
 })();
-
