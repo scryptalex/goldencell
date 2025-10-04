@@ -37,6 +37,7 @@ body {
 .site-header {
   background: rgba(255, 255, 255, 0.86);
   border-bottom: 1px solid rgba(184, 134, 11, 0.22);
+  z-index: 1000;
 }
 .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 24px rgba(0,0,0,0.04); }
 
@@ -90,6 +91,9 @@ body {
 
 .site-footer { background: #FFFBF0; color: var(--ink-2); border-top: 1px solid rgba(184,134,11,0.18); }
 .to-top { color: var(--gold-500); }
+
+/* Ensure language dropdown surfaces above overlapping visuals */
+.lang select { position: relative; z-index: 1002; }
 
 /* Subtle sparkle overlay for hero for a “brilliant” feel */
 .hero::after {

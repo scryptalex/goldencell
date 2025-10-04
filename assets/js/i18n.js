@@ -21,6 +21,8 @@
       apply(dict, lang);
       // Expose last dict for re-apply after dynamic includes
       window.gcI18n = { dict, lang, apply };
+      const s = getSelect();
+      if (s) s.value = lang;
     } catch (e) {
       if (lang !== 'en') return load('en');
       // eslint-disable-next-line no-console
@@ -60,6 +62,16 @@
     }
   }
 
+  // Fallback: observe DOM for header injection and bind when select appears
+  const obs = new MutationObserver(() => {
+    const s = getSelect();
+    if (s && !s.dataset.bound) {
+      bindLangSelect();
+      if (window.gcI18n && window.gcI18n.lang) s.value = window.gcI18n.lang;
+    }
+  });
+  try { obs.observe(document.documentElement, { childList: true, subtree: true }); } catch (_) {}
+
   document.addEventListener('DOMContentLoaded', () => {
     const lang = pickDefault();
     const s = getSelect();
@@ -74,7 +86,11 @@
       bindLangSelect();
       if (window.gcI18n) {
         const { dict, lang, apply } = window.gcI18n;
-        if (dict && lang && apply) apply(dict, lang);
+        if (dict && lang && apply) {
+          const s = getSelect();
+          if (s) s.value = lang;
+          apply(dict, lang);
+        }
       }
     } catch (_) { /* noop */ }
   });
