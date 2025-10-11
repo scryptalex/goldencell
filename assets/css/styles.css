@@ -41,7 +41,7 @@ body {
 }
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
-.logo { width: 34px; height: 34px; }
+.logo { width: 68px; height: 68px; }
 .brand-text { font-size: 18px; }
 
 .nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
