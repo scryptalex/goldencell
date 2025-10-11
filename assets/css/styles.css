@@ -42,8 +42,8 @@ body {
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
 .site-header .logo {
-  width: 272px;
-  height: 272px;
+  width: 544px;
+  height: 544px;
   transform-origin: center;
   display: block;
   /* Keep original logo color; just brighten slightly */
