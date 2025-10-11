@@ -41,13 +41,12 @@ body {
 }
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
-.site-header .logo { width: 816px; height: 816px; animation: logo-dance 7s ease-in-out infinite; transform-origin: center; display: block; }
-@keyframes logo-dance {
-  0%   { transform: translateY(0) scale(1) rotate(0deg); filter: drop-shadow(0 0 0 rgba(201,162,39,0)); }
-  25%  { transform: translateY(-8px) scale(1.08) rotate(1deg); filter: drop-shadow(0 0 8px rgba(201,162,39,0.25)); }
-  50%  { transform: translateY(0) scale(1.12) rotate(-1deg); filter: drop-shadow(0 0 14px rgba(201,162,39,0.45)); }
-  75%  { transform: translateY(6px) scale(1.06) rotate(1deg); filter: drop-shadow(0 0 10px rgba(201,162,39,0.3)); }
-  100% { transform: translateY(0) scale(1) rotate(0deg); filter: drop-shadow(0 0 0 rgba(201,162,39,0)); }
+.site-header .logo {
+  width: 816px;
+  height: 816px;
+  transform-origin: center;
+  display: block;
+  filter: brightness(1.15) saturate(1.25) contrast(1.1);
 }
 
 @media (max-width: 900px) {
