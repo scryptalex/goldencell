@@ -41,7 +41,11 @@ body {
 }
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
-.logo { width: 136px; height: 136px; }
+.site-header .logo { width: 272px; height: 272px; animation: logo-breathe 6s ease-in-out infinite; }
+@keyframes logo-breathe { 
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(201,162,39,0)); }
+  50% { transform: scale(1.06); filter: drop-shadow(0 0 10px rgba(201,162,39,0.35)); }
+}
 .brand-text { font-size: 18px; }
 
 .nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
