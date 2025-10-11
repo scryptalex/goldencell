@@ -39,11 +39,11 @@ body {
   background: rgba(10, 10, 9, 0.6);
   border-bottom: 1px solid rgba(201, 162, 39, 0.15);
 }
-.header-inner { display: flex; align-items: flex-start; gap: 20px; padding: 12px 0; }
-.brand { display: flex; align-items: flex-start; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
+.header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
 .site-header .logo {
-  width: 816px;
-  height: 816px;
+  width: 136px;
+  height: 136px;
   transform-origin: center;
   display: block;
   /* Less yellow, richer gold (similar to animation shades) */
@@ -55,7 +55,7 @@ body {
 }
 .brand-text { font-size: 18px; }
 
-.nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; align-self: flex-start; padding-top: 6px; }
+.nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
 .nav a { color: var(--white); text-decoration: none; padding: 8px 10px; border-radius: 8px; }
 .nav a:hover { background: rgba(255, 255, 255, 0.06); }
 .nav a.active { background: rgba(184,134,11,0.18); color: var(--gold-500); }
