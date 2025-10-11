@@ -20,8 +20,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--white);
-  background: radial-gradient(1200px 600px at 80% -10%, rgba(200,170,60,0.25), transparent 60%),
-              linear-gradient(180deg, #0a0a09 0%, #0b0a08 100%);
+  background: #e5e5e5; /* neutral gray to match logo file background */
   line-height: 1.5;
 }
 
@@ -42,12 +41,12 @@ body {
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
 .site-header .logo {
-  width: 544px;
-  height: 544px;
+  width: 136px;
+  height: 136px;
   transform-origin: center;
   display: block;
-  /* Keep original logo color; just brighten slightly */
-  filter: brightness(1.18) contrast(1.05);
+  /* Show provided logo as-is */
+  filter: none;
 }
 
 @media (max-width: 900px) {
