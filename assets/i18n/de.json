@@ -2,7 +2,6 @@
   "brand": "Golden Cell",
   "nav": {
     "research": "Forschung",
-    "markets": "Märkte",
     "technology": "Technologie",
     "therapies": "Therapien",
     "products": "Produkte",
@@ -16,12 +15,6 @@
     "s1": "Aktive Peptide in unseren Stammzellen",
     "s2": "Verbesserte Exosom‑Funktionalität",
     "s3": "Eigene Technologien"
-  },
-  "markets": {
-    "title": "Markteinblicke",
-    "global": "Weltmärkte",
-    "oncology": "Onkologiemarkt",
-    "note": "Größtes und am schnellsten wachsendes Segment"
   },
   "leadership": {
     "title": "Führung",

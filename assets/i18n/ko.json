@@ -2,7 +2,6 @@
   "brand": "Golden Cell",
   "nav": {
     "research": "연구",
-    "markets": "시장",
     "technology": "기술",
     "therapies": "치료 분야",
     "products": "제품",
@@ -16,12 +15,6 @@
     "s1": "줄기세포의 활성 펩타이드",
     "s2": "향상된 엑소좀 기능",
     "s3": "자체 기술"
-  },
-  "markets": {
-    "title": "시장 인사이트",
-    "global": "글로벌 시장",
-    "oncology": "종양학 시장",
-    "note": "가장 크고 빠르게 성장하는 세그먼트"
   },
   "leadership": {
     "title": "리더십",

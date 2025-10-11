@@ -2,7 +2,6 @@
   "brand": "Golden Cell",
   "nav": {
     "research": "Investigación",
-    "markets": "Mercados",
     "technology": "Tecnología",
     "therapies": "Terapias",
     "products": "Productos",
@@ -16,12 +15,6 @@
     "s1": "Péptidos activos en nuestras células madre",
     "s2": "Funcionalidad de exosomas mejorada",
     "s3": "Tecnologías propias"
-  },
-  "markets": {
-    "title": "Análisis de Mercado",
-    "global": "Mercados Globales",
-    "oncology": "Mercado de Oncología",
-    "note": "Segmento más grande y de mayor crecimiento"
   },
   "leadership": {
     "title": "Liderazgo",

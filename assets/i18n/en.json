@@ -5,7 +5,6 @@
     "therapies": "Therapies",
     "products": "Products",
     "research": "Research",
-    "markets": "Markets",
     "pipeline": "Pipeline",
     "team": "Team",
     "investors": "Investors",
@@ -79,12 +78,6 @@
     "s1": "Active peptides in our stem cells",
     "s2": "Enhanced exosome functionality",
     "s3": "Proprietary technologies"
-  },
-  "markets": {
-    "title": "Market Insights",
-    "global": "Global Markets",
-    "oncology": "Oncology Market",
-    "note": "Largest and fastest growing segment"
   },
   "team": {
     "title": "Team",

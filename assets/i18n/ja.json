@@ -2,7 +2,6 @@
   "brand": "Golden Cell",
   "nav": {
     "research": "研究",
-    "markets": "市場",
     "technology": "技術",
     "therapies": "治療領域",
     "products": "製品",
@@ -16,12 +15,6 @@
     "s1": "幹細胞に含まれる活性ペプチド",
     "s2": "強化されたエクソソーム機能",
     "s3": "独自技術"
-  },
-  "markets": {
-    "title": "市場インサイト",
-    "global": "世界市場",
-    "oncology": "腫瘍学市場",
-    "note": "最大かつ最も成長の速いセグメント"
   },
   "leadership": {
     "title": "リーダーシップ",

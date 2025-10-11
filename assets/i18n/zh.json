@@ -2,7 +2,6 @@
   "brand": "Golden Cell",
   "nav": {
     "research": "研究",
-    "markets": "市场",
     "technology": "技术",
     "therapies": "治疗领域",
     "products": "产品",
@@ -16,12 +15,6 @@
     "s1": "干细胞中的活性肽",
     "s2": "增强的外泌体功能",
     "s3": "自主技术"
-  },
-  "markets": {
-    "title": "市场洞察",
-    "global": "全球市场",
-    "oncology": "肿瘤市场",
-    "note": "最大且增长最快的细分市场"
   },
   "leadership": {
     "title": "领导团队",
