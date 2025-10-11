@@ -41,8 +41,8 @@ body {
 .header-inner { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
 .site-header .logo {
-  width: 408px;
-  height: 408px;
+  width: 1224px;
+  height: 1224px;
   transform-origin: center;
   display: block;
   /* Show provided logo as-is */
