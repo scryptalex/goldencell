@@ -69,7 +69,7 @@ body {
 }
 .nav a:hover {
   background: rgba(201,162,39,0.12);
-  color: var(--gold-50);
+  color: #ffffff; /* ensure high contrast on dark header */
   transform: translateY(-1px) scale(1.03);
   box-shadow: 0 0 12px rgba(201,162,39,0.25);
 }

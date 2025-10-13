@@ -2,6 +2,28 @@
   const qs = (s,r=document)=>r.querySelector(s);
   const qsa = (s,r=document)=>Array.from(r.querySelectorAll(s));
 
+  // Lightweight parallax for elements with [data-parallax]
+  function initParallax(){
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const items = qsa('[data-parallax]');
+    if (!items.length) return;
+    let ticking = false;
+    const speed = el => parseFloat(el.getAttribute('data-parallax')||'0.15') || 0;
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY || window.pageYOffset || 0;
+      items.forEach(el => {
+        const s = speed(el);
+        el.style.transform = `translate3d(0, ${Math.round(y * s)}px, 0)`;
+        el.style.willChange = 'transform';
+      });
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+  }
+
   function initTabs(){
     qsa('[data-tabs]').forEach(root => {
       if (root.dataset.bound) return; root.dataset.bound='1';
@@ -72,8 +94,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    initTabs(); initAccordion(); initCarousel(); initLottie(); initParticles();
+    initTabs(); initAccordion(); initCarousel(); initLottie(); initParticles(); initParallax();
   });
-  window.addEventListener('gc:refresh', () => { try { initTabs(); initAccordion(); initCarousel(); } catch(_){ } });
+  window.addEventListener('gc:refresh', () => { try { initTabs(); initAccordion(); initCarousel(); initParallax(); } catch(_){ } });
 })();
-
