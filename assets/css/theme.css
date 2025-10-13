@@ -74,9 +74,11 @@ body {
   color: #2C1E04;
   border-color: rgba(0,0,0,0.06);
 }
-.btn-primary:hover { filter: brightness(1.05); }
+.btn-primary:hover { background: linear-gradient(180deg, var(--gold-500), var(--gold-600)); color: #ffffff; box-shadow: 0 4px 14px rgba(184,134,11,0.22); }
 .btn-secondary { color: var(--gold-500); border-color: rgba(184,134,11,0.35); }
-.btn-secondary:hover { background: rgba(184,134,11,0.08); }
+.btn-secondary:hover { background: rgba(184,134,11,0.12); color: var(--gold-600); }
+
+.btn:focus-visible { outline: 2px solid rgba(184,134,11,0.5); outline-offset: 2px; }
 
 .card, .tile, .product-card, .form {
   background: #ffffff;
