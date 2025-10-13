@@ -30,6 +30,24 @@ function highlightActiveNav() {
   });
 }
 
+// Mobile menu toggle (call after header is injected)
+function bindMenu() {
+  const h = document.querySelector('.site-header');
+  if (!h || h.dataset.menuBound) return;
+  const btn = h.querySelector('.menu-toggle');
+  const nav = h.querySelector('.nav');
+  if (!btn || !nav) return;
+  h.dataset.menuBound = '1';
+  const close = () => { btn.classList.remove('open'); nav.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.addEventListener('click', () => {
+    const open = btn.classList.toggle('open');
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  window.addEventListener('resize', () => { if (window.innerWidth > 900) close(); }, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   await injectIncludes();
   setYear();
@@ -42,4 +60,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const apply = () => { if (!header) return; header.classList.toggle('scrolled', window.scrollY > 2); };
   apply();
   window.addEventListener('scroll', apply, { passive: true });
+  bindMenu();
+});
+
+// Re-bind menu after includes refresh
+window.addEventListener('gc:refresh', () => {
+  try {
+    const h = document.querySelector('.site-header');
+    if (h) h.dataset.menuBound = '';
+    bindMenu();
+  } catch (_) { /* noop */ }
 });

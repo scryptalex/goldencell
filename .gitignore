@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# temp
+.tmp_ppt/
+
+# local images/design dumps (optional; remove if you want them tracked)
+# logo and design/
+
